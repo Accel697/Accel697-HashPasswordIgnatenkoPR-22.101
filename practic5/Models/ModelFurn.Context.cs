@@ -13,10 +13,10 @@ namespace practic5.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class furniture_centreEntities : DbContext
+    public partial class furniture_centreEntities1 : DbContext
     {
-        public furniture_centreEntities()
-            : base("name=furniture_centreEntities")
+        public furniture_centreEntities1()
+            : base("name=furniture_centreEntities1")
         {
         }
     

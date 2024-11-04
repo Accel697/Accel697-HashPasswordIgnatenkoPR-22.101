@@ -9,13 +9,13 @@ namespace practic5
 {
     internal class Helper
     {
-        private static furniture_centreEntities _context;
+        private static furniture_centreEntities1 _context;
 
-        public static furniture_centreEntities GetContext()
+        public static furniture_centreEntities1 GetContext()
         {
             if (_context == null)
             {
-                _context = new furniture_centreEntities();
+                _context = new furniture_centreEntities1();
             }
             return _context;
         }

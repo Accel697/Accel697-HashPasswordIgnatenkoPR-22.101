@@ -140,18 +140,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\ModelFurn.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelFurn.Context.cs</LastGenOutput>
-      <DependentUpon>ModelFurn.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\ModelFurn.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelFurn.edmx</DependentUpon>
-      <LastGenOutput>ModelFurn.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +147,18 @@
       <Project>{23427b0f-db25-4e45-8579-0fffece06abe}</Project>
       <Name>HashPassword</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\ModelFurn.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelFurn.edmx</DependentUpon>
+      <LastGenOutput>ModelFurn.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ModelFurn.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelFurn.edmx</DependentUpon>
+      <LastGenOutput>ModelFurn.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

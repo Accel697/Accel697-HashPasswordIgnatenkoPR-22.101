@@ -12,8 +12,8 @@ namespace practic5
     {
         static void Main(string[] args)
         {
-            Helper helper = new Helper();
             Helper.GetContext();
+            Helper helper = new Helper();
             Hash hash = new Hash();
 
             Console.WriteLine("Введите логин: ");
@@ -21,7 +21,7 @@ namespace practic5
             Console.WriteLine("Введите пароль: ");
             string password = Console.ReadLine();
             Console.WriteLine("Введите ID сотрудника: ");
-            Int64 idEmployee = Int64.Parse(Console.ReadLine());
+            int idEmployee = int.Parse(Console.ReadLine());
 
             string hashPassw = hash.hashPassword(password);
             Console.WriteLine($"Хэшированный пароль: {hashPassw}");
@@ -32,6 +32,8 @@ namespace practic5
             user.Employee = idEmployee;
 
             helper.CreateUser(user);
+
+            Console.WriteLine("Учетная запись добавлена");
 
             Console.ReadLine();
         }
